@@ -6,3 +6,7 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return false
   }
 };
+
+
+// return a boolean 
+// multiply mpg and fuelLeft
