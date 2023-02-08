@@ -5,4 +5,4 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     else {
         return false
     }
-};
+}; 
