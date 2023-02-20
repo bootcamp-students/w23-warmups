@@ -1,0 +1,14 @@
+function findShort(s){  
+  return Math.min(...s.split(" ").map (s => s.length));
+}
+  
+// function findShort(s){
+ //split the string into an array 
+  //create a new array with the length of the words with .map method
+  //return the Math.min which returns the smallest number in the array
+  
+//   let strArray = s.split(" ");
+  
+//   let a = strArray.map(s => s.length);
+  
+//   return Math.min(...a);
