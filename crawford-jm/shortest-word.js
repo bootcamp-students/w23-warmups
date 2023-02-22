@@ -10,8 +10,6 @@ function findShort(s){
       shortestWord = newArray[i];
       console.log(shortestWord);
     }
-      //if (length of current string < length of next string)
-        //store that in shortestWord
   }
   return shortestWord.length;
 }
@@ -23,4 +21,5 @@ function findShort(s){
   
 //while iterating over array, 
   //if current index string length is less than previous string length
-  //
+    //if (length of current string < length of next string)
+        //store that in shortestWord
