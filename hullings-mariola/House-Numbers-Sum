@@ -1,0 +1,17 @@
+function houseNumbersSum(inputArray) {
+  //console.log(houseNumbersSum);
+  console.log(inputArray);
+  //Loop through array
+  for (let sum = 0, i = 0; ; i++) {
+    //loop through array until hit value that is ===0
+    if (inputArray [i] === 0) {
+        //once hit 0 value return the sum (added together values)
+      return sum
+        
+    } else sum += inputArray[i]
+  }
+}
+//Given the sequence of houses(inputArray)...
+//Determine sum of house numbers
+//Once 0 is encountered, stop counting
+//Output sum of array, stopping at 0

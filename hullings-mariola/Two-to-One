@@ -1,0 +1,16 @@
+function longest(s1, s2) {
+  // your code
+  let newStr = s1.concat(s2);
+  let newArr = newStr.split("");
+  let sortedArr = newArr.sort()
+  sortedArr.filter((e, i) => {
+    return newArr.indexOf(e) === i;
+  });
+}
+// arr.filter((item,
+//             index) => arr.indexOf(item) === index);
+//     }
+console.log(longest("aretheyhere", "yestheyarehere"));
+
+  
+}
