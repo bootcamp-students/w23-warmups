@@ -1,0 +1,8 @@
+function spinWords(string){
+  
+  return string.split(' ').map(w => w.length < 5 ? w : w.split('').reverse().join('')).join(' ');
+//     return 
+//       (string.length > 4) ? string.split('').reverse().join('') : string;
+//   string.join('');
+// }
+}
