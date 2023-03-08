@@ -11,7 +11,7 @@ function countGrade(scores){
     //console.log("C", C);
     D: scores.filter(num => num < 60 && num >= 0).length,
     //console.log("D", D);
-    X: scores.filter(num => num <= 0).length,
+    X: scores.filter(num => num <= -1).length,
     //console.log("X", X);
   }; 
   console.log(outputArr);
