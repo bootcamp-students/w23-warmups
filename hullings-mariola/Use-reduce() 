@@ -1,0 +1,28 @@
+function sum(array) {
+  // Use array.reduce() to calculate and return the
+  // sum of the values in array.
+
+ const sum = array.reduce((total, item) => total + item); 
+return sum;
+}
+
+
+function sumArray(array) {
+  /*Go through array and loop
+  total starting point is 1 and item = 4
+  */
+  const sum = array.reduce((total, item) => total + item); 
+
+  /*
+  1st call: total = 1, item = 4 => sum = 1 + 4 = 5
+  2nd call: total = 5, item = 0 => sum = 5 + 0 = 5
+  3rd call: total = 5, item = 9 => sum = 5 + 9 = 14
+  4th call: total = 14, item = -3 => sum = 14 + -3 = 11
+  */
+ 
+ // return the result 
+  console.log(sum); 
+  return sum;
+}
+
+sumArray([1, 4, 0, 9, -3]); //logs 11
