@@ -1,0 +1,19 @@
+function pigIt(str){
+//   split our string into an array
+    const arr = str.split(' ')
+  return arr
+//   iterate over the array - word is the parameter
+    .map((word) => {
+//     RegEx to determine if our character is a letter.
+//     This will ensure that only characters from a-z will be taken into account
+      return word.match(/[A-z]/i)
+//     removing the first character and appending it at the end, followed by ay 
+//     iterating over the strings with map and at each iteration, we remove the first 
+//     character with substr(1) which will return us a substring from character 1 to the end 
+//     of the string, then we add the first letter and finally we append ay at the end of it.
+//     .substr(start, length)
+        ? `${word.substr(1)}${word.substr(0, 1)}ay`
+        : word
+    })
+    .join(' ')
+}
