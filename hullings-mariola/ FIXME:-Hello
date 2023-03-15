@@ -1,0 +1,12 @@
+def find_short(s):
+#     turn each word into a string
+    words = s.split(' ')
+#     sort words based on their length(sorts list smallest to biggest) 
+#     index 0 is shortest word
+    words.sort(key=len)
+#     return the length of the word at index 0
+    return len(words[0])
+
+
+# find the lenght of each word
+# return the shortest one
