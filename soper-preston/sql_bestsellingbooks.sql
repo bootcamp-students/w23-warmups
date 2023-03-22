@@ -1,4 +1,4 @@
 -- Your Code Here
-SELECT * FROM books
-ORDER BY copies_sold ASC
+SELECT name, author, copies_sold FROM books
+ORDER BY copies_sold Desc
 LIMIT 5;
