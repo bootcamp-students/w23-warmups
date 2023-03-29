@@ -19,3 +19,4 @@ def parse(data):
         elif char == "o":
             output.append(value)
     # return the list
+    return output
