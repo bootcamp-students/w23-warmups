@@ -11,13 +11,9 @@ def rot13(message):
         
         if letter.islower():
             char = ord(letter) - 97
-            print("first ord", char)
             char += 13
-            print("after the add 13", char)
             if char > 25:
                 char -= 26
-                print("if char over 26", char)
-            print("+97", char + 97)
             string += chr(char + 97)
                 
         elif letter.isupper():
